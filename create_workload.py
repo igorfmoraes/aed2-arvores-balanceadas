@@ -4,8 +4,8 @@ import os
 
 
 def generate_workload(filename, num_operations, search_pct, insert_pct, delete_pct):
-    market_price = 100.00
-    volatility = 2.00
+    market_price = 10000
+    volatility = 1000
 
     active_prices = []
 
@@ -26,7 +26,7 @@ def generate_workload(filename, num_operations, search_pct, insert_pct, delete_p
                 op = "Insert"
 
             if op == "Insert":
-                price = round(random.gauss(market_price, volatility), 2)
+                price = round(random.gauss(market_price, volatility)) 
                 active_prices.append(price)
                 writer.writerow(["Insert", price])
 
