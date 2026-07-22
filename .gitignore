@@ -1,3 +1,3 @@
-workloads/
-resultados.csv
-process_workload
+resultados*.csv
+MainAVL
+MainRB
